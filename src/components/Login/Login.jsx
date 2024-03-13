@@ -8,10 +8,14 @@ const Login = () => {
 
     const auth=getAuth(app)
     const provider= new GoogleAuthProvider();
+
+    const handleGoogleLogin=()=>{
+        console.log("google mama kaj kortese")
+    }
     return (
         <div>
             <h2>Login</h2>
-            <button>Google Login</button>
+            <button onClick={handleGoogleLogin}>Google Login</button>
         </div>
     );
 };
